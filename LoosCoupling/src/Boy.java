@@ -11,7 +11,7 @@ public class Boy {
     }
 
     public void chatWithGirl() {
-        Agreement agreement = new Girl(); // tight coupling
+        Agreement agreement = new Girl(); // tight coupling -> loos coupling
         while(true){
             agreement.chat();
         }
