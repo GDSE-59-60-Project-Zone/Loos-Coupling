@@ -2,19 +2,15 @@
  * @author : Sanu Vithanage
  * @since : 0.1.0
  **/
-
 public class Boy {
+    public void chatWithGirl(){
+        //Tight coupling
+        /*Girl girl = new Girl();
+        girl.chat();
+*/
 
-    public static void main(String[] args) {
-        Boy boy = new Boy();
-        boy.chatWithGirl();
-    }
-
-    public void chatWithGirl() {
-        Agreement agreement = new Girl(); // tight coupling -> loos coupling
-        while(true){
-            agreement.chat();
-        }
-
+        //Loos-coupling coupling
+        Agreement girl = new Girl();
+        girl.chat();
     }
 }
