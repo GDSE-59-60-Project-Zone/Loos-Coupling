@@ -11,7 +11,10 @@ public class Boy {
     }
 
     public void chatWithGirl() {
-        Girl girl = new Girl();
-        girl.chat();
+        Agreement agreement = new Girl(); // tight coupling
+        while(true){
+            agreement.chat();
+        }
+
     }
 }
