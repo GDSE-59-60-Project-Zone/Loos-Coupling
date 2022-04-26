@@ -12,5 +12,9 @@ public class Boy {
         //Loos-coupling coupling
         Agreement girl = new Girl();
         girl.chat();
+
+        //Tight coupling
+        /*Girl g= new Girl();
+        g.chatWithAmal();*/
     }
 }
